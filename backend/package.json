@@ -1,0 +1,32 @@
+{
+  "name": "campus-event-management-backend",
+  "version": "1.0.0",
+  "description": "REST API for the Campus Event Management System (The University of Lahore)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch server.js",
+    "db:init": "node --disable-warning=ExperimentalWarning database/init.js",
+    "db:seed": "node --disable-warning=ExperimentalWarning database/seed.js",
+    "db:reset": "node --disable-warning=ExperimentalWarning database/init.js --reset && node --disable-warning=ExperimentalWarning database/seed.js",
+    "create-admin": "node --disable-warning=ExperimentalWarning scripts/createAdmin.js",
+    "test": "node --disable-warning=ExperimentalWarning --test --test-concurrency=1 \"tests/*.test.js\"",
+    "test:models": "node --disable-warning=ExperimentalWarning --test tests/models.test.js"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "license": "MIT"
+}
