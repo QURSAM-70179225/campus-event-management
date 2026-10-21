@@ -13,6 +13,18 @@ A full-stack web application for **The University of Lahore** where students dis
 | **Instructor** | `[Instructor Name]` |
 | **Repository** | `https://github.com/<your-username>/campus-event-management` |
 
+## 🌐 Live demo
+
+| | Link |
+|---|---|
+| Website | https://campus-event-management-mhbm.vercel.app |
+| REST API | https://campus-event-management-x65m.onrender.com/api/events |
+
+> Hosted free on Vercel (frontend), Render (backend) and Turso (SQLite database).
+> The backend sleeps after 15 minutes of inactivity — the first visit may take up to a minute to load.
+
+
+
 ---
 
 ## Contents
